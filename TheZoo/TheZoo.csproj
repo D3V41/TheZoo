@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3974818-3376-4511-9429-37B3DCE35617}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TheZoo</RootNamespace>
+    <AssemblyName>TheZoo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAnimal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddAnimal.Designer.cs">
+      <DependentUpon>AddAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCaretaker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddCaretaker.Designer.cs">
+      <DependentUpon>AddCaretaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVeterinarian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddVeterinarian.Designer.cs">
+      <DependentUpon>AddVeterinarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animal.cs" />
+    <Compile Include="Caretaker.cs" />
+    <Compile Include="CaretakerLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaretakerLogin.Designer.cs">
+      <DependentUpon>CaretakerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caretakers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caretakers.Designer.cs">
+      <DependentUpon>Caretakers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAnimal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteAnimal.Designer.cs">
+      <DependentUpon>DeleteAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAnimal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditAnimal.Designer.cs">
+      <DependentUpon>EditAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCaretaker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditCaretaker.Designer.cs">
+      <DependentUpon>EditCaretaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditVeterinarian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditVeterinarian.Designer.cs">
+      <DependentUpon>EditVeterinarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.cs" />
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerLogin.Designer.cs">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerprofile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerprofile.Designer.cs">
+      <DependentUpon>managerprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerReport.Designer.cs">
+      <DependentUpon>ManagerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs" />
+    <Compile Include="SearchAnimals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchAnimals.Designer.cs">
+      <DependentUpon>SearchAnimals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAnimal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowAnimal.Designer.cs">
+      <DependentUpon>ShowAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowCaretakers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowCaretakers.Designer.cs">
+      <DependentUpon>ShowCaretakers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowVeterinarian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowVeterinarian.Designer.cs">
+      <DependentUpon>ShowVeterinarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veterinarian.cs" />
+    <Compile Include="VeterinarianLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VeterinarianLogin.Designer.cs">
+      <DependentUpon>VeterinarianLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeterinarianReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VeterinarianReport.Designer.cs">
+      <DependentUpon>VeterinarianReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veterinarians.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veterinarians.Designer.cs">
+      <DependentUpon>Veterinarians.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAnimal.resx">
+      <DependentUpon>AddAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCaretaker.resx">
+      <DependentUpon>AddCaretaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVeterinarian.resx">
+      <DependentUpon>AddVeterinarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaretakerLogin.resx">
+      <DependentUpon>CaretakerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caretakers.resx">
+      <DependentUpon>Caretakers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAnimal.resx">
+      <DependentUpon>DeleteAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAnimal.resx">
+      <DependentUpon>EditAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCaretaker.resx">
+      <DependentUpon>EditCaretaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditVeterinarian.resx">
+      <DependentUpon>EditVeterinarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerLogin.resx">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerprofile.resx">
+      <DependentUpon>managerprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerReport.resx">
+      <DependentUpon>ManagerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchAnimals.resx">
+      <DependentUpon>SearchAnimals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAnimal.resx">
+      <DependentUpon>ShowAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowCaretakers.resx">
+      <DependentUpon>ShowCaretakers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowVeterinarian.resx">
+      <DependentUpon>ShowVeterinarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeterinarianLogin.resx">
+      <DependentUpon>VeterinarianLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeterinarianReport.resx">
+      <DependentUpon>VeterinarianReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veterinarians.resx">
+      <DependentUpon>Veterinarians.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canva-family-at-the-zoo-icon-MAC-bvmP-hk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager_409645.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caretaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
